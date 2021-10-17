@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+<link rel="stylesheet" href="global.css">
+
+{% block title %} Link
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  
+
+{% endblock title %}
+
+{% block body %} 
+
+{% csrf_token %}
+Welcome {{request.user}}
+you are logged in
+
+<a href="/logoutuser">logout</a>
+
+
+
+
+{% endblock body %}
